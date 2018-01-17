@@ -3,7 +3,7 @@
 
 '''
 Levenstein.py
-An example of getting Levenstein Distance
+An example of getting Levenshtein Distance
 Author: Daewung Kim (skywalker.deja@gmail.com)
 '''
 
@@ -25,7 +25,7 @@ def editdist(src, trg):
     return D0[-1]
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Get Levenstein Distance')
+    parser = argparse.ArgumentParser(description='Get Levenshtein Distance')
     parser.add_argument('--source', '-s', default='text toast', help='Source text')
     parser.add_argument('--target', '-t', default='next post', help='Target text')
     args = parser.parse_args()
