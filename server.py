@@ -33,11 +33,6 @@ class Handler(BaseHTTPRequestHandler):
     def do_HEAD(self):
         self._set_headers()
 
-    def do_POST(self):
-        # Doesn't do anything with posted data
-        self._set_headers()
-        self.wfile.write("<html><body><h1>POST!</h1></body></html>")
-
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Simple python server')
     parser.add_argument('--port', '-p', default='8000', help='Port number')
